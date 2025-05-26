@@ -62,54 +62,54 @@ const BillGatesLanding: React.FC = () => {
             <div className="max-w-4xl mx-auto text-center">
               {/* Header Section */}
               <div className="mb-12">
-                <div className="flex items-center justify-center gap-4 mb-6">
-                  <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tight drop-shadow-lg">
+                <div className="flex items-center justify-center gap-2 md:gap-4 mb-4 md:mb-6">
+                  <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-white tracking-tight drop-shadow-lg">
                     BILL GATES
                   </h1>
                 </div>
 
-                <h2 className="text-4xl md:text-6xl font-bold text-blue-400 mb-8 drop-shadow-lg">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-blue-400 mb-6 md:mb-8 drop-shadow-lg">
                   70TH BIRTHDAY
                 </h2>
 
-                <p className="text-xl md:text-2xl text-white font-medium tracking-wide drop-shadow-lg mb-12">
+                <p className="text-lg sm:text-xl md:text-2xl text-white font-medium tracking-wide drop-shadow-lg mb-8 md:mb-12 px-4">
                   TO HONOR THE LEGACY OF SERVICE TO HUMANITY
                 </p>
               </div>
 
-              <div className="grid grid-cols-4 gap-4 mb-12 max-w-2xl mx-auto">
-                <Card className="p-6 text-center bg-white/95 backdrop-blur-sm shadow-xl">
-                  <div className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4 mb-8 md:mb-12 max-w-xs sm:max-w-2xl mx-auto px-4 sm:px-0">
+                <Card className="p-3 sm:p-4 md:p-6 text-center bg-white/95 backdrop-blur-sm shadow-xl">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700 mb-1 sm:mb-2">
                     {timeLeft.days.toString().padStart(3, "0")}
                   </div>
-                  <div className="text-sm font-semibold text-slate-600 tracking-wider">
+                  <div className="text-xs sm:text-sm font-semibold text-slate-600 tracking-wider">
                     DAYS
                   </div>
                 </Card>
 
-                <Card className="p-6 text-center bg-white/95 backdrop-blur-sm shadow-xl">
-                  <div className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
+                <Card className="p-3 sm:p-4 md:p-6 text-center bg-white/95 backdrop-blur-sm shadow-xl">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700 mb-1 sm:mb-2">
                     {timeLeft.hours.toString().padStart(2, "0")}
                   </div>
-                  <div className="text-sm font-semibold text-slate-600 tracking-wider">
+                  <div className="text-xs sm:text-sm font-semibold text-slate-600 tracking-wider">
                     HOURS
                   </div>
                 </Card>
 
-                <Card className="p-6 text-center bg-white/95 backdrop-blur-sm shadow-xl">
-                  <div className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
+                <Card className="p-3 sm:p-4 md:p-6 text-center bg-white/95 backdrop-blur-sm shadow-xl">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700 mb-1 sm:mb-2">
                     {timeLeft.minutes.toString().padStart(2, "0")}
                   </div>
-                  <div className="text-sm font-semibold text-slate-600 tracking-wider">
+                  <div className="text-xs sm:text-sm font-semibold text-slate-600 tracking-wider">
                     MINUTES
                   </div>
                 </Card>
 
-                <Card className="p-6 text-center bg-white/95 backdrop-blur-sm shadow-xl">
-                  <div className="text-3xl md:text-4xl font-bold text-blue-700 mb-2">
+                <Card className="p-3 sm:p-4 md:p-6 text-center bg-white/95 backdrop-blur-sm shadow-xl">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700 mb-1 sm:mb-2">
                     {timeLeft.seconds.toString().padStart(2, "0")}
                   </div>
-                  <div className="text-sm font-semibold text-slate-600 tracking-wider">
+                  <div className="text-xs sm:text-sm font-semibold text-slate-600 tracking-wider">
                     SECONDS
                   </div>
                 </Card>
@@ -301,9 +301,9 @@ const BillGatesLanding: React.FC = () => {
                   <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-white">WB</span>
                   </div>
-                  <h4 className="text-xl font-bold text-slate-800">
+                  <h3 className="text-3xl sm:text-4xl font-bold text-slate-900">
                     Warren Buffett
-                  </h4>
+                  </h3>
                   <p className="text-sm text-slate-500">
                     Investor & Philanthropist
                   </p>
@@ -322,9 +322,9 @@ const BillGatesLanding: React.FC = () => {
                   <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-white">MG</span>
                   </div>
-                  <h4 className="text-xl font-bold text-slate-800">
+                  <h3 className="text-3xl sm:text-4xl font-bold text-slate-900">
                     Melinda Gates
-                  </h4>
+                  </h3>
                   <p className="text-sm text-slate-500">
                     Philanthropist & Co-founder
                   </p>
@@ -343,9 +343,9 @@ const BillGatesLanding: React.FC = () => {
                   <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl font-bold text-white">SJ</span>
                   </div>
-                  <h4 className="text-xl font-bold text-slate-800">
+                  <h3 className="text-3xl sm:text-4xl font-bold text-slate-900">
                     Satya Nadella
-                  </h4>
+                  </h3>
                   <p className="text-sm text-slate-500">CEO, Microsoft</p>
                 </div>
                 <blockquote className="text-slate-700 italic leading-relaxed">
@@ -398,7 +398,7 @@ const BillGatesLanding: React.FC = () => {
       {/* Social Media Section */}
       <div className="py-12 px-4 bg-white border-t border-gray-200">
         <div className="max-w-4xl mx-auto text-center">
-          <h4 className="text-2xl font-bold text-slate-800 mb-8">
+          <h4 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 md:mb-4">
             Follow the Celebration
           </h4>
           <div className="flex justify-center items-center gap-6">
@@ -463,64 +463,66 @@ const BillGatesLanding: React.FC = () => {
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-            {/* Logo/Brand Section */}
-            <div className="md:col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <Heart className="w-6 h-6 text-red-500 fill-current" />
-                <h5 className="text-2xl font-bold">Bill Gates 70th Birthday</h5>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 py-12 md:py-16 px-4">
+            <div className="space-y-4 md:space-y-6">
+              {/* Logo/Brand Section */}
+              <div className="md:col-span-2">
+                <div className="flex items-center gap-2 mb-4">
+                  <Heart className="w-6 h-6 text-red-500 fill-current" />
+                  <h5 className="text-2xl font-bold">Bill Gates 70th Birthday</h5>
+                </div>
+                <p className="text-base sm:text-lg text-slate-100 leading-relaxed mb-4">
+                  Celebrating seven decades of innovation, philanthropy, and
+                  unwavering commitment to improving lives around the world. Join
+                  us in honoring this remarkable milestone.
+                </p>
               </div>
-              <p className="text-slate-300 leading-relaxed mb-4">
-                Celebrating seven decades of innovation, philanthropy, and
-                unwavering commitment to improving lives around the world. Join
-                us in honoring this remarkable milestone.
-              </p>
-            </div>
 
-            {/* Quick Links */}
-            <div>
-              <h6 className="text-lg font-semibold mb-4">Quick Links</h6>
-              <ul className="space-y-2">
-                <li>
-                  <a
-                    href="#journey"
-                    className="text-slate-300 hover:text-white transition-colors"
-                  >
-                    Bill's Journey
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#about"
-                    className="text-slate-300 hover:text-white transition-colors"
-                  >
-                    About the Celebration
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#events"
-                    className="text-slate-300 hover:text-white transition-colors"
-                  >
-                    Events Schedule
-                  </a>
-                </li>
+              {/* Quick Links */}
+              <div>
+                <h6 className="text-lg font-semibold mb-4">Quick Links</h6>
+                <ul className="space-y-2">
+                  <li>
+                    <a
+                      href="#journey"
+                      className="text-slate-300 hover:text-white transition-colors"
+                    >
+                      Bill's Journey
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#about"
+                      className="text-slate-300 hover:text-white transition-colors"
+                    >
+                      About the Celebration
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#events"
+                      className="text-slate-300 hover:text-white transition-colors"
+                    >
+                      Events Schedule
+                    </a>
+                  </li>
 
-                <li>
-                  <a
-                    href="#tributes"
-                    className="text-slate-300 hover:text-white transition-colors"
-                  >
-                    Share a Tribute
-                  </a>
-                </li>
-              </ul>
+                  <li>
+                    <a
+                      href="#tributes"
+                      className="text-slate-300 hover:text-white transition-colors"
+                    >
+                      Share a Tribute
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
           {/* Bottom Footer */}
           <div className="border-t border-slate-700 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
               <div className="text-slate-400 text-sm">
                 &copy; 2025 Bill Gates 70th Birthday Celebration. All rights
                 reserved.
