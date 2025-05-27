@@ -132,7 +132,7 @@ const BillGatesLanding: React.FC = () => {
       </ParallaxSection>
 
       {/* YouTube Video Embed */}
-      <div id="journey" className="py-24 px-4 bg-white">
+      <div id="journey" className="py-12 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
             The Impact Story
@@ -163,7 +163,7 @@ const BillGatesLanding: React.FC = () => {
         direction="up"
         overlay={false}
       >
-        <div id="about" className="py-16 px-4 bg-gray-50">
+        <div id="about" className="py-12 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">
               About This Celebration
@@ -187,7 +187,7 @@ const BillGatesLanding: React.FC = () => {
       </ParallaxSection>
 
       {/* What to Expect Section */}
-      <div id="events" className="py-16 px-4 bg-white">
+      <div id="events" className="py-12 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800 text-center mb-16">
             Exciting news is on the horizon!
