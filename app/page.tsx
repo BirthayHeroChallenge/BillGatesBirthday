@@ -68,11 +68,11 @@ const BillGatesLanding: React.FC = () => {
                   </h1>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-red-600 mb-6 md:mb-8 drop-shadow-lg">
+                <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-blue-400 mb-6 md:mb-8 drop-shadow-lg">
                   70TH BIRTHDAY
                 </h2>
 
-                <p className="text-lg sm:text-xl md:text-2xl text-white font-medium tracking-wide drop-shadow-lg mb-8 md:mb-12 px-4">
+                <p className="text-lg sm:text-xl md:text-2xl text-white font-bold tracking-wide drop-shadow-lg mb-8 md:mb-12 px-4">
                   TO HONOR THE LEGACY OF SERVICE TO HUMANITY
                 </p>
               </div>
