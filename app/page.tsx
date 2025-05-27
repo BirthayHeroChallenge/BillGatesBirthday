@@ -396,39 +396,43 @@ const BillGatesLanding: React.FC = () => {
           </p>
 
           {/* New CTA Section */}
-          <div className="mt-8 space-y-6">
+          <div className="mt-8 space-y-6 relative">
             <p className="text-xl font-semibold">Stay tuned for updates</p>
-            <button
-              className="px-8 py-3 bg-red-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
-              onClick={() => {
-                const notification = document.createElement("div");
-                notification.className =
-                  "absolute left-1/2 -translate-x-1/2 mt-4 bg-white/90 backdrop-blur-sm text-slate-800 px-6 py-4 rounded-lg shadow-xl transform transition-all duration-500 z-50 max-w-sm";
-                notification.innerHTML = `
-        <div class="flex items-center gap-3">
-          <div class="p-2 bg-blue-100 rounded-full">
-            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            <div className="relative inline-block w-full max-w-sm">
+              <button
+                className="w-full px-6 py-3 bg-red-600 text-white rounded-full font-semibold shadow-lg"
+                onClick={(e) => {
+                  const parent = e.currentTarget.parentElement;
+
+                  const notification = document.createElement("div");
+                  notification.className =
+                    "absolute bottom-full mb-2 left-1/2 -translate-x-1/2 w-full max-w-xs bg-white text-slate-800 px-4 py-3 rounded-lg shadow-md z-50 text-sm";
+
+                  notification.innerHTML = `
+        <div class="flex items-start gap-2">
+          <div class="p-2 bg-blue-100 rounded-full flex-shrink-0 mt-0.5">
+            <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
             </svg>
           </div>
-          <p class="font-medium">Coming soon! Friday,18th July 2025 you will be able to add a tribute message to honour the legacy of service to humanity. Stay tuned! 🎉</p>
+          <p class="text-xs leading-relaxed break-words">
+            Coming soon! Friday, 18th July 2025 you will be able to add a tribute message to honour the legacy of service to humanity. Stay tuned! 🎉
+          </p>
         </div>`;
 
-                // Find the button and insert notification after it
-                const button = document.querySelector("button");
-                button?.parentNode?.insertBefore(
-                  notification,
-                  button.nextSibling
-                );
+                  parent.appendChild(notification);
 
-                setTimeout(() => {
-                  notification.style.opacity = "0";
-                  setTimeout(() => notification.remove(), 500);
-                }, 5000);
-              }}
-            >
-              Join the celebration
-            </button>
+                  setTimeout(() => {
+                    notification.remove();
+                  }, 5000);
+                }}
+              >
+                Join the celebration
+              </button>
+            </div>
+
             <p className="text-lg text-slate-600 italic mt-6">
               To Honor the Legacy of Service to Humanity!
             </p>
