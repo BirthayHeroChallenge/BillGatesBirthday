@@ -116,7 +116,7 @@ const BillGatesLanding: React.FC = () => {
               </div>
 
               {/* Date Banner */}
-              {/* <div className="max-w-2xl mx-auto">
+              <div className="max-w-2xl mx-auto">
                 <div className="bg-gradient-to-r from-purple-500 to-blue-600 rounded-2xl p-6 text-white text-center shadow-2xl backdrop-blur-sm">
                   <div className="flex items-center justify-center gap-3">
                     <Calendar className="w-8 h-8" />
@@ -125,7 +125,7 @@ const BillGatesLanding: React.FC = () => {
                     </span>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </ParallaxElement>
@@ -209,7 +209,6 @@ const BillGatesLanding: React.FC = () => {
                     <p className="text-white/90 font-semibold">
                       Friday, 18th July 2025
                     </p>
-                    <p className="text-white/80">(Africa)</p>
                   </div>
                 </div>
               </Card>
@@ -227,7 +226,6 @@ const BillGatesLanding: React.FC = () => {
                     <p className="text-white/90 font-semibold">
                       Friday, 22nd August 2025
                     </p>
-                    <p className="text-white/80">(California)</p>
                   </div>
                 </div>
               </Card>
@@ -245,7 +243,6 @@ const BillGatesLanding: React.FC = () => {
                     <p className="text-white/90 font-semibold">
                       Friday, 12th September 2025
                     </p>
-                    <p className="text-white/80">(Washington)</p>
                   </div>
                 </div>
               </Card>
@@ -389,7 +386,7 @@ const BillGatesLanding: React.FC = () => {
 
       <div className="py-12 bg-white border-t border-gray-200">
         <h3 className="text-3xl md:text-4xl font-bold text-slate-800 text-center mb-8">
-          Great things are coming
+          Great things are coming!
         </h3>
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg text-slate-600 mb-8">
@@ -400,11 +397,9 @@ const BillGatesLanding: React.FC = () => {
 
           {/* New CTA Section */}
           <div className="mt-8 space-y-6">
-            <p className="text-xl text-blue-600 font-semibold">
-              Stay tuned for updates!
-            </p>
+            <p className="text-xl font-semibold">Stay tuned for updates</p>
             <button
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+              className="px-8 py-3 bg-red-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
               onClick={() => {
                 const notification = document.createElement("div");
                 notification.className =
@@ -427,6 +422,9 @@ const BillGatesLanding: React.FC = () => {
             >
               Join the celebration
             </button>
+            <p className="text-lg text-slate-600 italic mt-6">
+              To Honor the Legacy of Service to Humanity!
+            </p>
           </div>
         </div>
       </div>
