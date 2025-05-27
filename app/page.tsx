@@ -403,6 +403,7 @@ const BillGatesLanding: React.FC = () => {
                 className="w-full px-6 py-3 bg-red-600 text-white rounded-full font-semibold shadow-lg"
                 onClick={(e) => {
                   const parent = e.currentTarget.parentElement;
+                  if (!parent) return;
 
                   const notification = document.createElement("div");
                   notification.className =
