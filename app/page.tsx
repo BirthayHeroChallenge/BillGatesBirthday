@@ -403,17 +403,24 @@ const BillGatesLanding: React.FC = () => {
               onClick={() => {
                 const notification = document.createElement("div");
                 notification.className =
-                  "fixed top-4 right-4 bg-white/90 backdrop-blur-sm text-slate-800 px-6 py-4 rounded-lg shadow-xl transform transition-all duration-500 z-50 max-w-sm";
+                  "absolute left-1/2 -translate-x-1/2 mt-4 bg-white/90 backdrop-blur-sm text-slate-800 px-6 py-4 rounded-lg shadow-xl transform transition-all duration-500 z-50 max-w-sm";
                 notification.innerHTML = `
-                  <div class="flex items-center gap-3">
-                    <div class="p-2 bg-blue-100 rounded-full">
-                      <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                    </div>
-                    <p class="font-medium">Coming soon! We'll notify you when tributes are open. Stay tuned! 🎉</p>
-                  </div>`;
-                document.body.appendChild(notification);
+        <div class="flex items-center gap-3">
+          <div class="p-2 bg-blue-100 rounded-full">
+            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <p class="font-medium">Coming soon! Friday,18th July 2025 you will be able to add a tribute message to honour the legacy of service to humanity. Stay tuned! 🎉</p>
+        </div>`;
+
+                // Find the button and insert notification after it
+                const button = document.querySelector("button");
+                button?.parentNode?.insertBefore(
+                  notification,
+                  button.nextSibling
+                );
+
                 setTimeout(() => {
                   notification.style.opacity = "0";
                   setTimeout(() => notification.remove(), 500);
@@ -514,7 +521,7 @@ const BillGatesLanding: React.FC = () => {
                       href="#journey"
                       className="text-slate-300 hover:text-white transition-colors"
                     >
-                      Bill's Journey
+                      The Impact Story
                     </a>
                   </li>
                   <li>
@@ -530,7 +537,7 @@ const BillGatesLanding: React.FC = () => {
                       href="#events"
                       className="text-slate-300 hover:text-white transition-colors"
                     >
-                      Events Schedule
+                      Exciting news in the horizon
                     </a>
                   </li>
                   <li>
