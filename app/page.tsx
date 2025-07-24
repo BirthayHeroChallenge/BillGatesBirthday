@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
-import { Heart, Calendar, Star, Gift, Play, Users, Globe } from "lucide-react";
+import { Heart, Calendar, Clock } from "lucide-react";
 import { ParallaxSection, ParallaxElement } from "@/components/ParallaxSection";
 
 interface TimeLeft {
@@ -195,54 +195,45 @@ const BillGatesLanding: React.FC = () => {
 
           <div className="space-y-8">
             {/* Pre-Birthday Events */}
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="flex justify-center items-center pb-6">
               {/* Event 1 */}
-              <Card className="p-6 bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-xl">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <span className="text-xl font-bold">1st</span>
-                  </div>
-                  <h5 className="text-lg font-bold mb-3">
-                    Pre-Birthday Tribute Event
-                  </h5>
-                  <div className="space-y-2">
-                    <p className="text-white/90 font-semibold">
-                      Friday, 18th July 2025
-                    </p>
-                  </div>
-                </div>
-              </Card>
+              <Card className="relative p-8 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 text-white shadow-2xl rounded-2xl max-w-md w-full overflow-hidden">
+                {/* Background decoration */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-12 -translate-x-12"></div>
 
-              {/* Event 2 */}
-              <Card className="p-6 bg-gradient-to-br from-blue-400 to-purple-500 text-white shadow-xl">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <span className="text-xl font-bold">2nd</span>
+                <div className="relative z-10 text-center">
+                  {/* Event Title */}
+                  <div className="mb-8">
+                    <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 mx-auto border border-white/30">
+                      <Calendar className="w-8 h-8 text-white" />
+                    </div>
+                    <h1 className="text-2xl font-bold mb-2 leading-tight">
+                      Pre-Birthday Tribute Event
+                    </h1>
                   </div>
-                  <h5 className="text-lg font-bold mb-3">
-                    Pre-Birthday Tribute Event
-                  </h5>
-                  <div className="space-y-2">
-                    <p className="text-white/90 font-semibold">
-                      Friday, 22nd August 2025
-                    </p>
-                  </div>
-                </div>
-              </Card>
 
-              {/* Event 3 */}
-              <Card className="p-6 bg-gradient-to-br from-green-400 to-blue-500 text-white shadow-xl">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <span className="text-xl font-bold">3rd</span>
-                  </div>
-                  <h5 className="text-lg font-bold mb-3">
-                    Pre-Birthday Tribute Event
-                  </h5>
-                  <div className="space-y-2">
-                    <p className="text-white/90 font-semibold">
-                      Friday, 12th September 2025
-                    </p>
+                  {/* Date Information */}
+                  <div className="space-y-4">
+                    <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                      <div className="flex items-center justify-center mb-2">
+                        <Clock className="w-5 h-5 mr-2 text-green-200" />
+                        <span className="text-green-200 font-semibold text-sm uppercase tracking-wide">
+                          Starts
+                        </span>
+                      </div>
+                      <p className="text-xl font-bold">July 18, 2025</p>
+                    </div>
+
+                    <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                      <div className="flex items-center justify-center mb-2">
+                        <Clock className="w-5 h-5 mr-2 text-red-200" />
+                        <span className="text-red-200 font-semibold text-sm uppercase tracking-wide">
+                          Ends
+                        </span>
+                      </div>
+                      <p className="text-xl font-bold">September 12, 2025</p>
+                    </div>
                   </div>
                 </div>
               </Card>
@@ -419,7 +410,7 @@ const BillGatesLanding: React.FC = () => {
             </svg>
           </div>
           <p class="text-xs leading-relaxed break-words">
-            Coming soon! Friday, 18th July 2025 you will be able to add a tribute message to honour the legacy of service to humanity. Stay tuned! 🎉
+            Coming soon! Friday, 12th September 2025 you will be able to add a tribute message to honour the legacy of service to humanity. Stay tuned! 🎉
           </p>
         </div>`;
 
